@@ -29,6 +29,10 @@
 		C88DB4E82AEBA06300998B5B /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB4E72AEBA06300998B5B /* ThemeFont.swift */; };
 		C88DB4EB2AEBA08900998B5B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB4EA2AEBA08900998B5B /* UIColor+Extension.swift */; };
 		C88DB4EE2AEBA6F300998B5B /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB4ED2AEBA6F300998B5B /* LabelFactory.swift */; };
+		C88DB4F02AECC7EB00998B5B /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB4EF2AECC7EB00998B5B /* UIVIew+Extension.swift */; };
+		C88DB4F22AECCB6200998B5B /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB4F12AECCB6200998B5B /* AmountView.swift */; };
+		C88DB4F42AECD76E00998B5B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB4F32AECD76E00998B5B /* HeaderView.swift */; };
+		C88DB4F72AECEDCD00998B5B /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB4F62AECEDCD00998B5B /* Tip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		C88DB4E72AEBA06300998B5B /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
 		C88DB4EA2AEBA08900998B5B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C88DB4ED2AEBA6F300998B5B /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
+		C88DB4EF2AECC7EB00998B5B /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		C88DB4F12AECCB6200998B5B /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
+		C88DB4F32AECD76E00998B5B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C88DB4F62AECEDCD00998B5B /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,7 @@
 		C88DB49A2AEB8B6900998B5B /* tip-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				C88DB4F52AECEDBB00998B5B /* model */,
 				C88DB4EC2AEBA6DC00998B5B /* factory */,
 				C88DB4E92AEBA07500998B5B /* extension */,
 				C88DB4E42AEBA04500998B5B /* config */,
@@ -172,6 +181,8 @@
 				C88DB4DE2AEB92DF00998B5B /* BillInputView.swift */,
 				C88DB4E02AEB92F000998B5B /* TipInputView.swift */,
 				C88DB4E22AEB930100998B5B /* SplitInputView.swift */,
+				C88DB4F12AECCB6200998B5B /* AmountView.swift */,
+				C88DB4F32AECD76E00998B5B /* HeaderView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				C88DB4EA2AEBA08900998B5B /* UIColor+Extension.swift */,
+				C88DB4EF2AECC7EB00998B5B /* UIVIew+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -199,6 +211,14 @@
 				C88DB4ED2AEBA6F300998B5B /* LabelFactory.swift */,
 			);
 			path = factory;
+			sourceTree = "<group>";
+		};
+		C88DB4F52AECEDBB00998B5B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C88DB4F62AECEDCD00998B5B /* Tip.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +367,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88DB4F22AECCB6200998B5B /* AmountView.swift in Sources */,
+				C88DB4F72AECEDCD00998B5B /* Tip.swift in Sources */,
 				C88DB4A02AEB8B6900998B5B /* CalculatorVC.swift in Sources */,
 				C88DB4DB2AEB91A400998B5B /* LogoView.swift in Sources */,
 				C88DB4E62AEBA05500998B5B /* ThemeColor.swift in Sources */,
@@ -356,9 +378,11 @@
 				C88DB49C2AEB8B6900998B5B /* AppDelegate.swift in Sources */,
 				C88DB4E82AEBA06300998B5B /* ThemeFont.swift in Sources */,
 				C88DB49E2AEB8B6900998B5B /* SceneDelegate.swift in Sources */,
+				C88DB4F42AECD76E00998B5B /* HeaderView.swift in Sources */,
 				C88DB4EE2AEBA6F300998B5B /* LabelFactory.swift in Sources */,
 				C88DB4E32AEB930100998B5B /* SplitInputView.swift in Sources */,
 				C88DB4E12AEB92F000998B5B /* TipInputView.swift in Sources */,
+				C88DB4F02AECC7EB00998B5B /* UIVIew+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
