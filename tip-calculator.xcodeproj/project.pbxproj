@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C873FDC12AEE220500A938E5 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873FDC02AEE220500A938E5 /* Int+Extension.swift */; };
+		C873FDC32AEE2EAE00A938E5 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873FDC22AEE2EAE00A938E5 /* Double+Extension.swift */; };
 		C88DB49C2AEB8B6900998B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB49B2AEB8B6900998B5B /* AppDelegate.swift */; };
 		C88DB49E2AEB8B6900998B5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB49D2AEB8B6900998B5B /* SceneDelegate.swift */; };
 		C88DB4A02AEB8B6900998B5B /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB49F2AEB8B6900998B5B /* CalculatorVC.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C873FDC02AEE220500A938E5 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		C873FDC22AEE2EAE00A938E5 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		C88DB4982AEB8B6900998B5B /* tip-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88DB49B2AEB8B6900998B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C88DB49D2AEB8B6900998B5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 				C88DB4EF2AECC7EB00998B5B /* UIVIew+Extension.swift */,
 				C8BC57822AEDEC1A00301CA5 /* String+Extension.swift */,
 				C8BC57842AEDF50100301CA5 /* UIResponder+Extension.swift */,
+				C873FDC02AEE220500A938E5 /* Int+Extension.swift */,
+				C873FDC22AEE2EAE00A938E5 /* Double+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				C8BC57812AEDE86100301CA5 /* Result.swift in Sources */,
 				C8BC577F2AEDE75600301CA5 /* CalculatorVM.swift in Sources */,
 				C8BC57852AEDF50100301CA5 /* UIResponder+Extension.swift in Sources */,
+				C873FDC12AEE220500A938E5 /* Int+Extension.swift in Sources */,
 				C88DB4F22AECCB6200998B5B /* AmountView.swift in Sources */,
 				C8BC57832AEDEC1A00301CA5 /* String+Extension.swift in Sources */,
 				C88DB4F72AECEDCD00998B5B /* Tip.swift in Sources */,
@@ -402,6 +409,7 @@
 				C88DB49C2AEB8B6900998B5B /* AppDelegate.swift in Sources */,
 				C88DB4E82AEBA06300998B5B /* ThemeFont.swift in Sources */,
 				C88DB49E2AEB8B6900998B5B /* SceneDelegate.swift in Sources */,
+				C873FDC32AEE2EAE00A938E5 /* Double+Extension.swift in Sources */,
 				C88DB4F42AECD76E00998B5B /* HeaderView.swift in Sources */,
 				C88DB4EE2AEBA6F300998B5B /* LabelFactory.swift in Sources */,
 				C88DB4E32AEB930100998B5B /* SplitInputView.swift in Sources */,

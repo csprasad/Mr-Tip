@@ -82,7 +82,7 @@ class TipInputView: UIView {
         return stackView
     }()
     
-    private let tipSubject = CurrentValueSubject<Tip, Never>(.none)
+    private let tipSubject: CurrentValueSubject<Tip, Never> = .init(.none)
     var valuePublisher: AnyPublisher<Tip, Never> {
         return tipSubject.eraseToAnyPublisher()
     }
@@ -142,8 +142,28 @@ class TipInputView: UIView {
         parentViewController?.present(alertController, animated: true)
     }
     
-    priv func observe() {
-        
+    private func observe() {
+        tipSubject.sink { [unowned self] tip in
+            resetView()
+            switch tip {
+            case .none:
+                break
+            case .tenPercent:
+                tenPercentTipButton.backgroundColor = ThemeColor.secondary
+            case .fifteenPercent:
+                fifteenPercentTipButton.backgroundColor = ThemeColor.secondary
+            case .twentyPercent:
+                twentyPercentTipButton.backgroundColor = ThemeColor.secondary
+            case .custom(let value):
+                customTipButton.backgroundColor = ThemeColor.secondary
+                let text = NSMutableAttributedString(
+                    string: "₹\(value)",
+                attributes: [
+                    .font: ThemeFont.bold(ofSize: 20)])
+                text.addAttributes([.font: ThemeFont.bold(ofSize: 14)], range: NSMakeRange(0, 1))
+                customTipButton.setAttributedTitle(text, for: .normal)
+            }
+        }.store(in: &cancellables)
     }
     
     private func resetView() {
