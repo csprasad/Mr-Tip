@@ -1,6 +1,6 @@
 # Mr. Tip - Tip Calculator App
 ![platform](https://img.shields.io/badge/platform-iOS-orange)
-![Repository size](https://img.shields.io/github/repo-size/csprasad/SwiftUI-Animations)
+![Repository size](https://img.shields.io/github/repo-size/csprasad/Mr-Tip)
 [![GitHub license](https://img.shields.io/badge/License-MIT-orange.svg)](LICENSE)
 
 ## Table of Contents
