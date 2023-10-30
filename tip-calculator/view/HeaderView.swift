@@ -53,8 +53,8 @@ class HeaderView: UIView {
         }
     }
     
-    func configure(topLabelText: String, bottomLabelText: String) {
-        topLabel.text = topLabelText
-        bottomLabel.text = bottomLabelText
+    func configure(topText: String, bottomText: String) {
+        topLabel.text = topText
+        bottomLabel.text = bottomText
     }
 }

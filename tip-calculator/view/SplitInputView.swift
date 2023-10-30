@@ -13,7 +13,7 @@ class SplitInputView: UIView {
     
     private let headerView: HeaderView =  {
         let view = HeaderView()
-        view.configure(topLabelText: "Split", bottomLabelText: "the total")
+        view.configure(topText: "Split", bottomText: "the total")
        return view
     }()
     
@@ -25,6 +25,7 @@ class SplitInputView: UIView {
             Just(splitSubject.value == 1 ? 1 : splitSubject.value - 1)
         }.assign(to: \.value, on: splitSubject)
             .store(in: &cancellables)
+        button.accessibilityIdentifier = ScreenIdentifier.SplitInputView.decrementButton.rawValue
         return button
     }()
     
@@ -36,6 +37,7 @@ class SplitInputView: UIView {
             Just(splitSubject.value + 1)
         }.assign(to: \.value, on: splitSubject)
             .store(in: &cancellables)
+        button.accessibilityIdentifier = ScreenIdentifier.SplitInputView.incrementButton.rawValue
         return button
     }()
     
@@ -44,6 +46,7 @@ class SplitInputView: UIView {
             text: "1",
             font: ThemeFont.bold(ofSize: 20),
             backgroundColor: .white)
+        label.accessibilityIdentifier = ScreenIdentifier.SplitInputView.quantityValueLable.rawValue
         return label
     }()
     

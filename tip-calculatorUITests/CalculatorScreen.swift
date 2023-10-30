@@ -14,16 +14,102 @@ class CalculatorScreen {
         self.app = app
     }
     
+    //LogoView
+    var logoView: XCUIElement {
+        app.otherElements[ScreenIdentifier.LogoView.logoView.rawValue]
+    }
+    
+    //ResultView
     var totalAmountPerPersonValueLabel: XCUIElement {
-        return app.staticTexts[ScreenIdentifier.ResultView.totalAmountPerPersonValueLabel.rawValue]
+        app.staticTexts[ScreenIdentifier.ResultView.totalAmountPerPersonValueLabel.rawValue]
     }
     
     var totalBillValueLabel: XCUIElement {
-        return app.staticTexts[ScreenIdentifier.ResultView.totalBillValueLabel.rawValue]
+        app.staticTexts[ScreenIdentifier.ResultView.totalBillValueLabel.rawValue]
     }
     
     var totalTipValueLabel: XCUIElement {
-        return app.staticTexts[ScreenIdentifier.ResultView.totalTipValueLable.rawValue]
+        app.staticTexts[ScreenIdentifier.ResultView.totalTipValueLable.rawValue]
     }
     
+    //BillInputView
+    var billInputViewTextField: XCUIElement {
+        app.textFields[ScreenIdentifier.BillInputView.textField.rawValue]
+    }
+    
+    //TipInputView
+    var tenPercentTipButton: XCUIElement {
+        app.buttons[ScreenIdentifier.TipInputView.tenPercentButton.rawValue]
+    }
+    
+    var fifteenPercentTipButton: XCUIElement {
+        app.buttons[ScreenIdentifier.TipInputView.fifteenPercentButton.rawValue]
+    }
+    
+    var twentyPercentTipButton: XCUIElement {
+        app.buttons[ScreenIdentifier.TipInputView.twentyPercentButton.rawValue]
+    }
+    
+    var customTipButton: XCUIElement {
+        app.buttons[ScreenIdentifier.TipInputView.customTipButton.rawValue]
+    }
+    
+    var customTipAlertTextField: XCUIElement {
+        app.buttons[ScreenIdentifier.TipInputView.customTipAlertTextField.rawValue]
+    }
+    
+    // SplitInputView
+    var incrementButton: XCUIElement {
+        app.buttons[ScreenIdentifier.SplitInputView.incrementButton.rawValue]
+    }
+    
+    var decrementButton: XCUIElement {
+        app.buttons[ScreenIdentifier.SplitInputView.decrementButton.rawValue]
+    }
+    
+    var splitValueLabel: XCUIElement {
+        app.staticTexts[ScreenIdentifier.SplitInputView.quantityValueLable.rawValue]
+    }
+    
+    // Actions
+    
+    func enterBill(amount: Double) {
+        billInputViewTextField.tap()
+        billInputViewTextField.typeText("\(amount)\n")
+    }
+    
+    func selectTip(tip: Tip) {
+      switch tip {
+      case .tenPercent:
+        tenPercentTipButton.tap()
+      case .fifteenPercent:
+        fifteenPercentTipButton.tap()
+      case .twentyPercent:
+        twentyPercentTipButton.tap()
+      case .custom(let value):
+        customTipButton.tap()
+        XCTAssertTrue(customTipAlertTextField.waitForExistence(timeout: 1.0))
+        customTipAlertTextField.typeText("\(value)\n")
+      }
+    }
+    
+    func selectIncrementButton(numberOfTaps: Int) {
+        incrementButton.tap(withNumberOfTaps: numberOfTaps, numberOfTouches: 1)
+    }
+    
+    func selectDecementButton(numberOfTaps: Int) {
+        decrementButton.tap(withNumberOfTaps: numberOfTaps, numberOfTouches: 1)
+    }
+    
+    func doubleTapLogoview() {
+        logoView.tap(withNumberOfTaps: 2, numberOfTouches: 1)
+    }
+    
+    enum Tip {
+        case tenPercent
+        case fifteenPercent
+        case twentyPercent
+        case custom(value: Int)
+    }
 }
+

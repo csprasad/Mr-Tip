@@ -13,7 +13,7 @@ class BillInputView: UIView {
     
     private let headerView: HeaderView =  {
         let view = HeaderView()
-        view.configure(topLabelText: "Enter", bottomLabelText: "your bill")
+        view.configure(topText: "Enter", bottomText: "your bill")
        return view
     }()
     
@@ -36,10 +36,11 @@ class BillInputView: UIView {
         let textField = UITextField()
         textField.borderStyle = .none
         textField.font = ThemeFont.demibold(ofSize: 28)
-        textField.keyboardType = .decimalPad
+        textField.keyboardType = .numberPad
         textField.setContentHuggingPriority(.defaultLow, for: .horizontal)
         textField.textColor = ThemeColor.text
         textField.tintColor = ThemeColor.text
+        textField.accessibilityIdentifier = ScreenIdentifier.BillInputView.textField.rawValue
         //Add tool bar her
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: 36))
         toolbar.barStyle = .default
