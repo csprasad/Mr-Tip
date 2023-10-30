@@ -98,6 +98,10 @@ class TipInputView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func reset() {
+        tipSubject.send(.none)
+    }
+    
     private func layout() {
         [headerView,buttonVStackView].forEach(addSubview(_:))
         
