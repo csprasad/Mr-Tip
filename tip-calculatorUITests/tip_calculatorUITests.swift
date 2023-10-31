@@ -79,9 +79,9 @@ final class tip_calculatorUITests: XCTestCase {
       XCTAssertEqual(screen.totalAmountPerPersonValueLabel.label, "₹250")
     }
     
-    func testRestButton() {
+    func testResetButton() {
         screen.enterBill(amount: 300)
-//        screen.selectTip(tip: .custom(value: 200))
+        screen.selectTip(tip: .custom(value: 200))
         screen.selectIncrementButton(numberOfTaps: 1)
         screen.doubleTapLogoview()
         XCTAssertEqual(screen.totalBillValueLabel.label, "₹0")

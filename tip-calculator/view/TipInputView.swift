@@ -126,10 +126,10 @@ class TipInputView: UIView {
         message: nil,
         preferredStyle: .alert)
       controller.addTextField { textField in
+        textField.accessibilityIdentifier = ScreenIdentifier.TipInputView.customTipAlertTextField.rawValue
         textField.placeholder = "Make it generous!"
         textField.keyboardType = .numberPad
         textField.autocorrectionType = .no
-        textField.accessibilityIdentifier = ScreenIdentifier.TipInputView.customTipAlertTextField.rawValue
       }
       let cancelAction = UIAlertAction(
         title: "Cancel",

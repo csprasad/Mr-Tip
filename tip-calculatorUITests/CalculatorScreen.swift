@@ -55,7 +55,7 @@ class CalculatorScreen {
     }
     
     var customTipAlertTextField: XCUIElement {
-        app.buttons[ScreenIdentifier.TipInputView.customTipAlertTextField.rawValue]
+        app.textFields[ScreenIdentifier.TipInputView.customTipAlertTextField.rawValue]
     }
     
     // SplitInputView
