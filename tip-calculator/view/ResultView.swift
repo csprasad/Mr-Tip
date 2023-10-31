@@ -11,7 +11,7 @@ class ResultView: UIView {
     
     private let headerLabel: UILabel = {
         LabelFactory.build(
-            text: "Total p/person",
+            text: "Total per/person",
             font: ThemeFont.demibold(ofSize: 18))
     }()
     
@@ -21,9 +21,10 @@ class ResultView: UIView {
         let text = NSMutableAttributedString(
             string: "₹0",
             attributes: [
-                .font: ThemeFont.bold(ofSize: 48),
+                .font: ThemeFont.bold(ofSize: 48)
             ])
         text.addAttributes([.font: ThemeFont.bold(ofSize: 24)], range: NSMakeRange(0, 1))
+        label.textColor = ThemeColor.text
         label.attributedText = text
         label.accessibilityIdentifier = ScreenIdentifier.ResultView.totalAmountPerPersonValueLabel.rawValue
         return label
@@ -94,7 +95,7 @@ class ResultView: UIView {
     }
     
     private func layout() {
-        backgroundColor = .white
+        backgroundColor = ThemeColor.views
         addSubview(vStackView)
         vStackView.snp.makeConstraints { make in
             make.top.equalTo(snp.top).offset(24)
@@ -104,7 +105,7 @@ class ResultView: UIView {
         }
         
         horizontalLineView.snp.makeConstraints { make in
-            make.height.equalTo(2)
+            make.height.equalTo(1)
         }
         
         addShadow(offset: CGSize(width: 0, height: 3),

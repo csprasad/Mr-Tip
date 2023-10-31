@@ -24,7 +24,7 @@ class AmountView: UIView {
     private lazy var amountLabel: UILabel = {
        let label = UILabel()
         label.textAlignment = self.textAlignment
-        label.textColor = ThemeColor.primary
+        label.textColor = ThemeColor.text
         let text = NSMutableAttributedString(
         string: "₹0",
         attributes: [

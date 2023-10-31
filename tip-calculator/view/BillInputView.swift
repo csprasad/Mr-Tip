@@ -19,7 +19,7 @@ class BillInputView: UIView {
     
     private let textFieldContainerView: UIView = {
        let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = ThemeColor.views
         view.addCornerRadius(radius: 8.0)
         return view
     }()

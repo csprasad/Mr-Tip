@@ -16,12 +16,19 @@ class LogoView: UIView {
         return view
     }()
     
+    private let mustachImageView: UIImageView = {
+        let view = UIImageView(image: .init(named: "mustache"))
+        view.contentMode = .scaleAspectFit
+        return view
+    }()
+    
     private let topLable: UILabel = {
         let label = UILabel()
         let text = NSMutableAttributedString(
             string: "Mr TIP",
             attributes: [.font: ThemeFont.demibold(ofSize: 16)])
         text.addAttributes([.font: ThemeFont.bold(ofSize: 24)], range: NSMakeRange(3, 3))
+        label.textColor = ThemeColor.text
         label.attributedText = text
         return label
     }()
@@ -32,9 +39,18 @@ class LogoView: UIView {
                            textAlignment: .left)
     }()
     
+    private lazy var zStackview: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [
+        topLable,
+        mustachImageView
+        ])
+        stackView.axis = .horizontal
+        return stackView
+    }()
+    
     private lazy var vStackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [
-        topLable,
+        zStackview,
         bottomLabel
         ])
         view.axis = .vertical
@@ -73,6 +89,10 @@ class LogoView: UIView {
         
         imageView.snp.makeConstraints { make in
             make.height.equalTo(imageView.snp.width)
+        }
+        
+        mustachImageView.snp.makeConstraints { make in
+            make.width.equalTo(40)
         }
     }
 }

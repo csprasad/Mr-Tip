@@ -195,7 +195,7 @@ class TipInputView: UIView {
       string: tip.stringValue,
       attributes: [
         .font: ThemeFont.bold(ofSize: 20),
-        .foregroundColor: UIColor.white
+        .foregroundColor: ThemeColor.text
       ])
     text.addAttributes([
       .font: ThemeFont.demibold(ofSize: 14)

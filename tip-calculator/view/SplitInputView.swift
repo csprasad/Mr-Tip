@@ -45,7 +45,7 @@ class SplitInputView: UIView {
         let label = LabelFactory.build(
             text: "1",
             font: ThemeFont.bold(ofSize: 20),
-            backgroundColor: .white)
+            backgroundColor: ThemeColor.views)
         label.accessibilityIdentifier = ScreenIdentifier.SplitInputView.quantityValueLable.rawValue
         return label
     }()
