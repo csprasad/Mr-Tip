@@ -1,4 +1,6 @@
 # Mr. Tip - Tip Calculator App
+Mr. Tip is a sleek and intuitive iOS app built using Swift.
+
 ![platform](https://img.shields.io/badge/platform-iOS-orange)
 ![Repository size](https://img.shields.io/github/repo-size/csprasad/Mr-Tip)
 [![GitHub license](https://img.shields.io/badge/License-MIT-orange.svg)](LICENSE)
@@ -12,7 +14,7 @@
 
 ## Overview
 
-Mr. Tip is a user-friendly tip calculator app designed to make it easy for users to calculate tips, split bills, and even customize tip percentages. With a beautiful and intuitive user interface, Mr. Tip is a handy tool for anyone who wants to calculate tips and split bills in a restaurant, cafe, or any other setting.
+Mr. Tip is designed to enhance your dining experience by simplifying tip calculations. Whether you’re figuring out tips, splitting bills, or customizing percentages, Mr. Tip makes the process quick and enjoyable. With its elegant design and user-friendly interface, you can effortlessly manage your calculations at restaurants, cafes, or any social event. Powered by Swift for seamless performance and reliability, Mr. Tip ensures you always have a handy tool for accurate and effortless bill management.
 
 ## Features
 
