@@ -51,4 +51,4 @@ If you want to contribute to Mr. Tip, feel free to fork this repository and subm
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the **MIT License**
