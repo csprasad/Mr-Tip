@@ -116,6 +116,7 @@ class SplitInputView: UIView {
         button.setTitle(text, for: .normal)
         button.backgroundColor = ThemeColor.primary
         button.titleLabel?.font = ThemeFont.bold(ofSize: 20)
+        button.titleLabel?.textColor = ThemeColor.text
         button.addRoundedCorners(corners: corners, radius: 8.0)
         return button
     }

@@ -11,7 +11,7 @@ class LogoView: UIView {
     
     
     private let imageView: UIImageView = {
-        let view = UIImageView(image: .init(named: "icCalculatorBW"))
+        let view = UIImageView(image: .init(named: "calculator"))
         view.contentMode = .scaleAspectFit
         return view
     }()
@@ -25,9 +25,9 @@ class LogoView: UIView {
     private let topLable: UILabel = {
         let label = UILabel()
         let text = NSMutableAttributedString(
-            string: "Mr TIP",
+            string: "Mr. TIP",
             attributes: [.font: ThemeFont.demibold(ofSize: 16)])
-        text.addAttributes([.font: ThemeFont.bold(ofSize: 24)], range: NSMakeRange(3, 3))
+        text.addAttributes([.font: ThemeFont.bold(ofSize: 24)], range: NSMakeRange(4, 3))
         label.textColor = ThemeColor.text
         label.attributedText = text
         return label

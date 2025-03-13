@@ -95,7 +95,6 @@ class ResultView: UIView {
     }
     
     private func layout() {
-        backgroundColor = ThemeColor.views
         addSubview(vStackView)
         vStackView.snp.makeConstraints { make in
             make.top.equalTo(snp.top).offset(24)
@@ -109,9 +108,11 @@ class ResultView: UIView {
         }
         
         addShadow(offset: CGSize(width: 0, height: 3),
-                  color: .blue,
-                  radius: 12.0,
+                  color: ThemeColor.separator,
+                  radius: 12,
                   opacity: 0.1)
+        
+        backgroundColor = ThemeColor.views
     }
     
     private func buildSpacerView(height: CGFloat) -> UIView {
