@@ -1,0 +1,61 @@
+# macOS-specific files
+.DS_Store
+._*
+
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Build and derived data
+build/
+DerivedData/
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+.packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/
+Cartfile.resolved
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# AppCode (JetBrains IDE)
+.idea/
+
+# App Thinning
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Local development environment files
+.env
+.env.local
+
+# Miscellaneous
+*.log
+*.swp
+*.backup
+*.orig
+*.xccheckout
+*.moved-aside
+
+# Ignore playgrounds
+*.playground/
+
+# Ignore SwiftLint cache
+.swiftlintcache
+
+# Ignore SwiftPM artifacts
+.swiftpm/xcode/

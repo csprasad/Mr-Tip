@@ -55,7 +55,7 @@ class TipInputView: UIView {
     button.setTitle("Custom tip", for: .normal)
     button.titleLabel?.font = ThemeFont.bold(ofSize: 20)
     button.backgroundColor = ThemeColor.primary
-      button.tintColor = ThemeColor.text
+    button.setTitleColor(ThemeColor.text, for: .normal)
     button.addCornerRadius(radius: 8.0)
     button.tapPublisher.sink { [weak self] _ in
       self?.handleCustomTipButton()
