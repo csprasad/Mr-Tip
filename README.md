@@ -7,6 +7,7 @@ Mr. Tip is a sleek and intuitive iOS app built using Swift.
 
 ## Table of Contents
 - [Overview](#overview)
+- [Screenshots](#Screenshots)
 - [Features](#features)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -15,6 +16,11 @@ Mr. Tip is a sleek and intuitive iOS app built using Swift.
 ## Overview
 
 Mr. Tip is designed to enhance your dining experience by simplifying tip calculations. Whether you’re figuring out tips, splitting bills, or customizing percentages, Mr. Tip makes the process quick and enjoyable. With its elegant design and user-friendly interface, you can effortlessly manage your calculations at restaurants, cafes, or any social event. Powered by Swift for seamless performance and reliability, Mr. Tip ensures you always have a handy tool for accurate and effortless bill management.
+
+## Screenshots
+| Light Mode | Dark Mode |
+|------------|-----------|
+| ![Light Mode Screenshot](Mr.%20Tip/screenshots/Light.png) | ![Dark Mode Screenshot](Mr.%20Tip/screenshots/Dark.png) |
 
 ## Features
 
