@@ -59,6 +59,9 @@ class SplitInputView: UIView {
         
         stackView.axis = .horizontal
         stackView.spacing = 0
+        stackView.addBorder()
+        stackView.addCornerRadius(radius: 8)
+
         return stackView
     }()
     
@@ -114,7 +117,7 @@ class SplitInputView: UIView {
     private func buildButton(text: String, corners: CACornerMask) -> UIButton {
         let button = UIButton()
         button.setTitle(text, for: .normal)
-        button.backgroundColor = ThemeColor.primary
+        button.backgroundColor = ThemeColor.secondary
         button.titleLabel?.font = ThemeFont.bold(ofSize: 30)
         button.setTitleColor(ThemeColor.text, for: .normal)
         button.addRoundedCorners(corners: corners, radius: 8.0)

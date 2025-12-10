@@ -20,7 +20,7 @@ Mr. Tip is designed to enhance your dining experience by simplifying tip calcula
 ## Screenshots
 | Light Mode | Dark Mode |
 |------------|-----------|
-| ![Light Mode Screenshot](Mr.%20Tip/screenshots/Light.png) | ![Dark Mode Screenshot](Mr.%20Tip/screenshots/Dark.png) |
+| ![Light Mode Screenshot](Mr.%20Tip/screenshots/light.png) | ![Dark Mode Screenshot](Mr.%20Tip/screenshots/dark.png) |
 
 ## Features
 

@@ -30,4 +30,9 @@ extension UIView {
         layer.cornerRadius = radius
         layer.maskedCorners = [corners]
     }
+    
+    func addBorder(_ color: UIColor = ThemeColor.secondary, _ width: CGFloat = 0.3) {
+        layer.borderColor = color.cgColor
+        layer.borderWidth = width
+    }
 }

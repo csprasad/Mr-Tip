@@ -113,6 +113,7 @@ class ResultView: UIView {
                   opacity: 0.1)
         
         backgroundColor = ThemeColor.views
+        addBorder()
     }
     
     private func buildSpacerView(height: CGFloat) -> UIView {
